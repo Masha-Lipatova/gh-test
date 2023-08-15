@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body>
+        <button  id='start-btn' style="width: 100px; height: 20px;">Старт игры</button> 
+        <button  id='dop-btn' style="width: 100px; height: 20px;">Бонус игра</button>
+    
+    <div class='hide-first' id="stage">
+        <div>Напишите имя</div>
+        <input id="input"/>
+        <button id='stage-btn'>ответить</button>
+        <div id="stage-ask"></div>
+    </div>
+
+    <div class='hide-first' id="first-stage">
+        <div>2+2</div>
+        <input id="input-ask"/>
+        <button id='first-stage-btn'>ответить</button>
+        <div id="ask"></div>
+    </div>
+
+
+    <div id="second-stage" class="hide-first">
+        <div>На какой картинке изображен цветок? </div>
+        <img id="img1" src="C:\Users\masha\OneDrive\Рабочий стол\9DZ\pngwing.com.png" style="width:100px;" >
+        <img id="img" src="C:\Users\masha\OneDrive\Рабочий стол\9DZ\pngwing.com (1).png"style="width: 100px;">
+        <div id="second-div-ask"></div>
+    </div>
+
+    <div id="stage3" class="hide-first">
+        <h2 style="justify-content: center;">Убей монстра</h2>
+        <div style="display: flex;align-items: center;justify-content: center; flex-direction: column;">
+            <div id="health-monster"style="font-size: 30px;width: 100px;height: 40px;background-color:plum;"></div>
+            <img id="img2" src="C:\Users\masha\OneDrive\Рабочий стол\9DZ\монстр.png" style="width: 400px;">
+        </div>
+        <div class="test">
+            <button id="btn-attac" >Атаковать</button>
+            <button id="btn-health">Лечиться</button>
+        </div>
+        <div id="health-user"style="display: flex;align-items: center;justify-content: center; flex-direction: column;font-size: 30px;width: 100px;height: 40px;background-color:plum;"></div>
+    </div>
+    
+    <div id="stage4" class="hide-first check">
+        <h3 id="div4">Найди правильную кнопку </h3>
+        <div>
+<button style="width: 40px; height: 25px;border-radius: 4px;"></button>
+<button style="width: 40px; height: 25px;border-radius: 4px;"></button>
+<button style="width: 40px; height: 25px;border-radius: 4px;"></button>
+<button style="width: 40px; height: 25px;border-radius: 4px;"></button>
+<button style="width: 40px; height: 25px;border-radius: 4px;"></button>
+<button style="width: 40px; height: 25px;border-radius: 4px;"></button>
+<button style="width: 40px; height: 25px;border-radius: 4px;"></button>
+<button id="trueBtn" style="width: 40px;height: 25px;border-radius: 4px;"></button>
+<button style="width: 40px; height: 25px;border-radius: 4px;"></button>
+<button style="width: 40px; height: 25px;border-radius: 4px;"></button>
+<button style="width: 40px; height: 25px;border-radius: 4px;"></button>
+        </div>
+        <div>
+<button style="width: 40px; height: 25px;border-radius: 4px;"></button>
+<button style="width: 40px; height: 25px;border-radius: 4px;"></button>
+<button style="width: 40px; height: 25px;border-radius: 4px;"></button>
+<button style="width: 40px; height: 25px;border-radius: 4px;"></button>
+<button style="width: 40px; height: 25px;border-radius: 4px;"></button>
+<button style="width: 40px; height: 25px;border-radius: 4px;"></button>
+<button style="width: 40px; height: 25px;border-radius: 4px;"></button>
+<button style="width: 40px; height: 25px;border-radius: 4px;"></button>
+<button style="width: 40px; height: 25px;border-radius: 4px;"></button>
+<button style="width: 40px; height: 25px;border-radius: 4px;"></button>
+        </div>
+        <div>
+<button style="width: 40px; height: 25px;border-radius: 4px;"></button>
+<button style="width: 40px; height: 25px;border-radius: 4px;"></button>
+<button style="width: 40px; height: 25px;border-radius: 4px;"></button>
+<button style="width: 40px; height: 25px;border-radius: 4px;"></button>
+<button style="width: 40px; height: 25px;border-radius: 4px;"></button>
+<button style="width: 40px; height: 25px;border-radius: 4px;"></button>
+<button style="width: 40px; height: 25px;border-radius: 4px;"></button>
+<button style="width: 40px; height: 25px;border-radius: 4px;"></button>
+<button style="width: 40px; height: 25px;border-radius: 4px;"></button>
+<button style="width: 40px; height: 25px;border-radius: 4px;"></button>
+        </div>
+    </div>
+
+    <div id="stage5" class="hide-first">
+      <div id="action">Выбери путь</div>
+      <button id="good-way-btn">хороший</button>
+      <button id="bad-way-btn">плохой</button>
+      
+    </div>
+
+    <div id="stage6" class="hide-first">
+<img src="C:\Users\masha\OneDrive\Рабочий стол\9DZ\монстрик.png" id="img3" style="width: 35%;">
+    <button id="good-btn">погладить</button>
+      <button id="bad-btn">убить</button>
+    </div>
+
+    <div id="stage7" class="hide-first">
+        <div>Ты прошёл игру.Молодец!</div>
+        
+    </div> 
+
+
+<div class="hide-first" id="dop">
+    <table  id="table">
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+     <div style="width: 470px;height: 200px;
+     background-color: #4682B4;
+     font-size: 70px;
+     text-align: center;" 
+     id="askk"> 
+        Идёт игра...</div>
+    </div>
+   
+    <script src="index.js"></script>
+</body>
+</html>

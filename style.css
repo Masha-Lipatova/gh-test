@@ -1,0 +1,114 @@
+#table td {
+    width: 150px;
+    height: 150px;
+    border: 1px solid black;
+    text-align: center;
+    font-size: bold;
+    font-size: 100px;
+}
+
+#table {
+    background-color: #483D8B;
+}
+
+.hide-first{
+    visibility: hidden;
+    width: 100%;
+    height: 600px;
+    background-color: lightblue;
+}
+
+.visible{
+    visibility: visible;
+    width: 100%;
+    height: 600px;
+    background-color: lightcyan;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.visible-first{
+    visibility: visible;
+    width: 100%;
+    height: 600px;
+    background-color: lightblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.visible-second{
+    visibility: visible;
+    width: 100%;
+    height: 600px;
+    background-color: lavender;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.visible-3{
+    visibility: visible;
+    width: 100%;
+    height: 100vh;
+    background-color: thistle;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.test{
+    justify-content: center;
+    margin-top: 30px;
+    display: flex;
+}
+
+
+.check{
+    display: flex;
+}
+
+.img-turn { 
+    transition: 0.5s;
+    transform: rotate(360deg); 
+   }
+
+.img-right {
+    transform: rotate(90deg);
+   }
+  
+   
+.visible-4{
+    visibility: visible;
+    width: 100%;
+    height: 100vh;
+    background-color: plum;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.visible-5{
+    visibility: visible;
+    width: 100%;
+    height: 600px;
+    background-color:  lavenderblush;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+   
+.visible-dop{
+    visibility: visible;
+    width: 100%;
+    height: 100vh;
+    background-color: #B0C4DE;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}   
